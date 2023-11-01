@@ -46,22 +46,29 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 30,
           ),
           Center(
             child: Container(
               height: 300,
-              width: 350,
+              width: 330,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
                     'Username',
-                    style: TextStyle(fontWeight: FontWeight.w900),
+                    style: TextStyle(
+                        fontWeight: FontWeight.w900, fontFamily: 'Awesome'),
                   ),
-                  TextFormField(
-                    decoration:
-                        const InputDecoration(border: OutlineInputBorder()),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    height: 40,
+                    child: TextFormField(
+                      decoration:
+                          const InputDecoration(border: OutlineInputBorder()),
+                    ),
                   ),
                   const SizedBox(
                     height: 30,
@@ -73,14 +80,18 @@ class LoginScreen extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  TextFormField(
-                    decoration:
-                        const InputDecoration(border: OutlineInputBorder()),
+                  SizedBox(
+                    height: 40,
+                    child: TextFormField(
+                      decoration:
+                          const InputDecoration(border: OutlineInputBorder()),
+                    ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 40,
                   ),
                   SizedBox(
+                      height: 40,
                       width: double.maxFinite,
                       child: ElevatedButton(
                           onPressed: () {},
@@ -88,8 +99,7 @@ class LoginScreen extends StatelessWidget {
                               shape: MaterialStateProperty.all<
                                       RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(0),
-                                      side: BorderSide(color: Colors.red)))),
+                                      borderRadius: BorderRadius.circular(0)))),
                           child: Text('Login')))
                 ],
               ),
